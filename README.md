@@ -5,34 +5,40 @@ build local-first tools for the practical work around independent music:
 preparing a release, checking delivery material, reviewing artwork, and making
 handoffs easier to understand.
 
-## Current direction
+## Start here
 
-**[Releaseforge](https://github.com/notgabriels-sys/releaseforge/pull/1)** is
-the flagship work in progress: a local release-proof workflow for the point
-before a distributor upload or delivery handoff. It keeps measured file facts,
-supplied declarations, open evidence, and captured revision changes visibly
-separate in a portable offline packet.
+The strongest current experiment is **[Releaseforge](https://github.com/notgabriels-sys/releaseforge/pull/1)**:
+a local proof workflow for the point before a delivery handoff or distributor
+upload. It is under draft review, so the useful first step is its synthetic
+local demo rather than a claim of a finished service.
 
-The goal is not another cloud catalogue or a false compliance badge. It is a
-clearer answer to a practical question: *what was reviewed, what is only
-declared, and what changed before this handoff?*
+→ **[Open the safe start-here guide](START_HERE.md)**
 
-## A focused toolchain
+## One workflow, four local evidence lanes
 
-The tools below cover different parts of one release workflow. They remain
-local-first and make their limits explicit.
+```mermaid
+flowchart LR
+  A[Artwork delivery capture] --> C[Coverforge]
+  B[Audio delivery evidence] --> M[Mastergate]
+  D[Metadata review] --> L[Releaseledger]
+  C --> R[Releaseforge local proof and handoff]
+  M --> R
+  L --> R
+```
 
-- **[Coverforge](https://github.com/notgabriels-sys/albumdesign)** — preflights
-  release artwork and exports a per-platform delivery pack from an approved
-  master.
-- **[Mastergate](https://github.com/notgabriels-sys/mastergate)** — measures a
-  declared batch of PCM WAV files against a delivery contract and writes a
-  portable evidence pack.
-- **[Releaseledger](https://github.com/notgabriels-sys/releaseledger)** —
-  checks declared release metadata and prepares a reviewable handoff dossier.
-- **[Sleeveproof](https://github.com/notgabriels-sys/sleeveproof)** — turns a
-  batch of cover-art variants into labelled contact sheets for selection and
-  review.
+The arrows show one possible local evidence flow, not automatic integration, a
+mandated stack, or external approval. Each tool can be used independently.
+
+| Workflow lane | Tool | Local role | State |
+| --- | --- | --- | --- |
+| Visual delivery | [Coverforge](https://github.com/notgabriels-sys/albumdesign) | Preflights artwork and exports a per-platform delivery pack. | Supporting local tool. |
+| Audio delivery | [Mastergate](https://github.com/notgabriels-sys/mastergate) | Measures a declared PCM WAV batch against a chosen delivery contract. | Supporting local tool. |
+| Metadata review | [Releaseledger](https://github.com/notgabriels-sys/releaseledger) | Checks declared release metadata and prepares a reviewable handoff dossier. | Supporting local tool. |
+| Evidence synthesis | [Releaseforge](https://github.com/notgabriels-sys/releaseforge/pull/1) | Creates a local proof packet and can reconcile documented compatible captures. | Draft PR; synthetic demo available. |
+
+[Sleeveproof](https://github.com/notgabriels-sys/sleeveproof) is a separate,
+optional visual-review utility for turning cover-art variants into labelled
+contact sheets. It is not a required delivery stage.
 
 ## Artist and label work
 
@@ -45,8 +51,8 @@ local-first and make their limits explicit.
 - Start with the files and facts that actually exist on the owner's machine.
 - Distinguish verified measurements from declarations, approvals, and unknowns.
 - Make a portable record for a collaborator without uploading raw source media.
-- Treat a passing local check as evidence of a narrow check, never as proof of
-  rights, approval, platform acceptance, or public release status.
+- A local packet can make a handoff clearer; it never establishes rights,
+  approval, platform acceptance, or public-release readiness.
 
 I am consolidating this work around release handoff and delivery evidence rather
 than turning every useful internal utility into a separate product.
