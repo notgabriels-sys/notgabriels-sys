@@ -17,6 +17,27 @@ The goal is not another cloud catalogue or a false compliance badge. It is a
 clearer answer to a practical question: *what was reviewed, what is only
 declared, and what changed before this handoff?*
 
+## Safe synthetic workflow starter
+
+The suite also contains a one-command, fully synthetic integration walk-through
+for the Releaseforge → Coverforge → Releaseforge handoff path. It is useful
+when evaluating the workflow before any genuine artwork, audio, or release
+folder is involved:
+
+```bash
+python3 scripts/release_workflow_demo.py /path/to/new-synthetic-workflow
+```
+
+It requires local `releaseforge` and `coverforge` binaries and never installs,
+uploads, or deletes anything. Read the exact prerequisites, output tree, and
+limits in [the synthetic workflow starter guide](docs/RELEASE_WORKFLOW_STARTER.md).
+
+This integration currently depends on the companion-manifest work under review
+in [Releaseforge PR #1](https://github.com/notgabriels-sys/releaseforge/pull/1)
+and [Coverforge PR #3](https://github.com/notgabriels-sys/albumdesign/pull/3).
+It is a draft workflow demonstration, not a claim that either feature is
+merged, installed, or available from the default branches.
+
 ## A focused toolchain
 
 The tools below cover different parts of one release workflow. They remain

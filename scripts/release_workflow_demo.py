@@ -2,10 +2,13 @@
 
 from __future__ import annotations
 
+import argparse
 import os
 import shutil
 import json
 import subprocess
+import sys
+from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
@@ -186,3 +189,38 @@ def run_workflow(
         handoff_packet=plan.handoff_packet,
         coverforge_state=state,
     )
+
+
+def build_parser() -> argparse.ArgumentParser:
+    """Build the small operator-facing parser without starting a workflow."""
+    parser = argparse.ArgumentParser(
+        description="Run a synthetic local Releaseforge and Coverforge workflow."
+    )
+    parser.add_argument("destination", help="new directory for generated synthetic workflow files")
+    parser.add_argument("--releaseforge-bin", default="releaseforge")
+    parser.add_argument("--coverforge-bin", default="coverforge")
+    return parser
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    """Run the verified synthetic workflow and return a shell-friendly status."""
+    args = build_parser().parse_args(argv)
+    try:
+        plan = plan_workflow(
+            args.destination,
+            releaseforge_bin=args.releaseforge_bin,
+            coverforge_bin=args.coverforge_bin,
+        )
+        result = run_workflow(plan)
+    except WorkflowError as error:
+        print(f"workflow error: {error}", file=sys.stderr)
+        return 2
+
+    print("Synthetic local workflow complete.")
+    print(f"Coverforge linkage: {result.coverforge_state}")
+    print(f"Review handoff: {result.handoff_packet}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

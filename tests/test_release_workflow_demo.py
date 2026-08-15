@@ -1,3 +1,5 @@
+import contextlib
+import io
 import json
 import sys
 import tempfile
@@ -6,6 +8,8 @@ from pathlib import Path
 
 from scripts.release_workflow_demo import (
     WorkflowError,
+    build_parser,
+    main,
     plan_workflow,
     resolve_executable,
     run_workflow,
@@ -128,3 +132,54 @@ class WorkflowExecutionTests(unittest.TestCase):
 
         with self.assertRaisesRegex(WorkflowError, "contains findings"):
             validate_handoff(packet)
+
+    def test_validate_handoff_rejects_malformed_json(self):
+        packet = self.root / "handoff"
+        write_handoff(packet, findings=[], state="aligned")
+        (packet / "RELEASE_HANDOFF.json").write_text("{not json", encoding="utf-8")
+
+        with self.assertRaisesRegex(WorkflowError, "JSON is unreadable"):
+            validate_handoff(packet)
+
+
+class WorkflowCliTests(unittest.TestCase):
+    def setUp(self):
+        self._temporary_directory = tempfile.TemporaryDirectory()
+        self.root = Path(self._temporary_directory.name)
+
+    def tearDown(self):
+        self._temporary_directory.cleanup()
+
+    def test_main_returns_usage_error_without_running_for_existing_destination(self):
+        destination = self.root / "existing"
+        destination.mkdir()
+        stderr = io.StringIO()
+
+        with contextlib.redirect_stderr(stderr):
+            code = main(
+                [
+                    str(destination),
+                    "--releaseforge-bin",
+                    sys.executable,
+                    "--coverforge-bin",
+                    sys.executable,
+                ]
+            )
+
+        self.assertEqual(code, 2)
+        self.assertIn("workflow error:", stderr.getvalue())
+        self.assertIn("already exists", stderr.getvalue())
+
+    def test_parser_accepts_explicit_binary_overrides(self):
+        args = build_parser().parse_args(
+            [
+                "demo-output",
+                "--releaseforge-bin",
+                "/opt/tools/releaseforge",
+                "--coverforge-bin",
+                "/opt/tools/coverforge",
+            ]
+        )
+
+        self.assertEqual(args.releaseforge_bin, "/opt/tools/releaseforge")
+        self.assertEqual(args.coverforge_bin, "/opt/tools/coverforge")
