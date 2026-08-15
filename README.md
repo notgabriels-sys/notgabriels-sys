@@ -31,7 +31,7 @@ mandated stack, or external approval. Each tool can be used independently.
 
 | Workflow lane | Tool | Local role | State |
 | --- | --- | --- | --- |
-| Visual delivery | [Coverforge](https://github.com/notgabriels-sys/albumdesign) | Preflights artwork and can create a portable delivery capture. | Supporting local tool. |
+| Visual delivery | [Coverforge](https://github.com/notgabriels-sys/albumdesign) | Preflights artwork and exports a per-platform delivery pack. | Supporting local tool. |
 | Audio delivery | [Mastergate](https://github.com/notgabriels-sys/mastergate) | Measures a declared PCM WAV batch against a chosen delivery contract. | Supporting local tool. |
 | Metadata review | [Releaseledger](https://github.com/notgabriels-sys/releaseledger) | Checks declared release metadata and prepares a reviewable handoff dossier. | Supporting local tool. |
 | Evidence synthesis | [Releaseforge](https://github.com/notgabriels-sys/releaseforge/pull/1) | Creates a local proof packet and can reconcile documented compatible captures. | Draft PR; synthetic demo available. |
