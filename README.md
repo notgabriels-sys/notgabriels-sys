@@ -13,6 +13,8 @@ Dark themes, print-ready templates, and small tools that do one thing without de
 | **[50 Dark Themes for Claude Code](https://github.com/notgabriels-sys/claude-code-50-dark-themes)** | Fifty hand-tuned dark themes with a visual gallery and a one-command installer. MIT. |
 | **[theme-contrast](https://github.com/notgabriels-sys/theme-contrast)** | Check any colour theme against WCAG contrast floors. One Python file, no dependencies, exits non-zero in CI. |
 | **[htmlshot](https://github.com/notgabriels-sys/htmlshot)** | Render HTML to exact-size PNGs and PDFs with headless Chrome. Handles the hang that truncates multi-page PDFs. |
+| **[Lowlight — 70 VS Code themes](https://github.com/notgabriels-sys/lowlight-themes)** | Fifty dark and twenty light, contrast floors enforced at build time, matching integrated-terminal palettes. MIT. |
+| **[Deep Field for Obsidian](https://github.com/notgabriels-sys/obsidian-deep-field)** | A dark Obsidian theme with every colour lifted until it clears its WCAG floor. MIT. |
 
 ### See things running
 
@@ -21,6 +23,8 @@ Dark themes, print-ready templates, and small tools that do one thing without de
 chart components and interface states. All in the browser, nothing to install.
 
 **[Theme gallery →](https://notgabriels-sys.github.io/claude-code-50-dark-themes/)** — all fifty previewed in their own colours.
+
+**[Website templates →](https://notgabriels-sys.github.io/dark-html-templates-demo/)** — portfolio, SaaS landing, docs, pricing, changelog, waitlist.
 
 ### Writing
 
