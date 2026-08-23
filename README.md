@@ -14,6 +14,7 @@ Dark themes, print-ready templates, and small tools that do one thing without de
 | **[theme-contrast](https://github.com/notgabriels-sys/theme-contrast)** | Check any colour theme against WCAG contrast floors. One Python file, no dependencies, exits non-zero in CI. |
 | **[htmlshot](https://github.com/notgabriels-sys/htmlshot)** | Render HTML to exact-size PNGs and PDFs with headless Chrome. Handles the hang that truncates multi-page PDFs. |
 | **[Lowlight — 70 VS Code themes](https://github.com/notgabriels-sys/lowlight-themes/releases/latest)** | Fifty dark and twenty light, contrast floors enforced at build time, matching integrated-terminal palettes. Download the `.vsix` and install. MIT. |
+| **[Dark Terminal Themes](https://github.com/notgabriels-sys/dark-terminal-themes)** | Fifty palettes for Alacritty, kitty, Ghostty, WezTerm, iTerm2 and Windows Terminal. Canonical ANSI hues, every colour above a 4.5:1 floor. MIT. |
 | **[Deep Field for Obsidian](https://github.com/notgabriels-sys/obsidian-deep-field)** | A dark Obsidian theme with every colour lifted until it clears its WCAG floor. MIT. |
 
 ### See things running
