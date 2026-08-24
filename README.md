@@ -17,17 +17,13 @@ The catalog is the best starting point: it separates public products, source rep
 | | |
 |---|---|
 | **[50 Dark Themes for Claude Code](https://github.com/notgabriels-sys/claude-code-50-dark-themes)** | Fifty hand-tuned dark themes with a visual gallery and a one-command installer. MIT. |
-| **[Mixmarks](https://github.com/notgabriels-sys/mixmarks)** | Local-first WAV review notes tied to one exact PCM file. Browser app, CLI, public release. MIT. |
 | **[Releaseforge](https://github.com/notgabriels-sys/releaseforge)** | Local release-proof packets before distributor upload. Keeps measured facts, declarations and blockers separate. MIT. |
-| **[Mastergate](https://github.com/notgabriels-sys/mastergate)** | Offline preflight for declared batches of integer PCM WAV masters. MIT. |
 | **[Releaseledger](https://github.com/notgabriels-sys/releaseledger)** | Offline release metadata checker and handoff dossier generator. MIT. |
 | **[Coverforge](https://github.com/notgabriels-sys/albumdesign)** | Release-artwork preflight, delivery exports and review tooling. MIT. |
 | **[theme-contrast](https://github.com/notgabriels-sys/theme-contrast)** | Check any colour theme against WCAG contrast floors. One Python file, no dependencies, exits non-zero in CI. |
 | **[htmlshot](https://github.com/notgabriels-sys/htmlshot)** | Render HTML to exact-size PNGs and PDFs with headless Chrome. Handles the hang that truncates multi-page PDFs. |
 
 ### See things running
-
-**[Mixmarks live app →](https://notgabriels-sys.github.io/mixmarks/)** — browser WAV review workflow with no account, upload, analytics or telemetry.
 
 **[Theme gallery →](https://notgabriels-sys.github.io/claude-code-50-dark-themes/)** — all fifty Claude Code themes previewed in their own colours.
 
@@ -41,4 +37,4 @@ The catalog is the best starting point: it separates public products, source rep
 
 ---
 
-*Also here: offline, read-only tools for audio and creative review — waveform notes, release evidence packets, artwork preflight and delivery-metadata audits. They run locally and do not upload source material.*
+*Also here: offline, read-only tools for audio and creative review — release evidence packets, artwork preflight and delivery-metadata audits. They run locally and do not upload source material.*
