@@ -46,9 +46,6 @@ local-first and make their limits explicit.
 - **[Coverforge](https://github.com/notgabriels-sys/albumdesign)** — preflights
   release artwork and exports a per-platform delivery pack from an approved
   master.
-- **[Mastergate](https://github.com/notgabriels-sys/mastergate)** — measures a
-  declared batch of PCM WAV files against a delivery contract and writes a
-  portable evidence pack.
 - **[Releaseledger](https://github.com/notgabriels-sys/releaseledger)** —
   checks declared release metadata and prepares a reviewable handoff dossier.
 - **[Sleeveproof](https://github.com/notgabriels-sys/sleeveproof)** — turns a
