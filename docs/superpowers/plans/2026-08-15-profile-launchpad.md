@@ -66,7 +66,6 @@ does not inspect, upload, rename, delete, or modify a real release folder.
 | Workflow lane | Tool | Local role |
 | --- | --- | --- |
 | Artwork delivery | [Coverforge](https://github.com/notgabriels-sys/albumdesign) | Preflights artwork and can create a portable delivery capture. |
-| Audio delivery | [Mastergate](https://github.com/notgabriels-sys/mastergate) | Measures a declared PCM WAV batch against a chosen delivery contract. |
 | Metadata review | [Releaseledger](https://github.com/notgabriels-sys/releaseledger) | Checks declared release metadata and prepares a reviewable handoff dossier. |
 | Evidence synthesis | [Releaseforge](https://github.com/notgabriels-sys/releaseforge/pull/1) | Creates a local proof packet and can reconcile documented compatible captures. |
 
@@ -129,7 +128,7 @@ git commit -m "docs: add profile start-here guide"
 
 **Interfaces:**
 - Consumes: `START_HERE.md` and public repository links for Coverforge,
-  Mastergate, Releaseledger, Sleeveproof, and the Releaseforge draft.
+  Releaseledger, Sleeveproof, and the Releaseforge draft.
 - Produces: a profile README whose prominent link is `START_HERE.md`, whose
   visual map is duplicated by prose/table content, and whose status language is
   literal.
@@ -160,10 +159,8 @@ Insert this Mermaid diagram immediately before the tool table:
 ```mermaid
 flowchart LR
   A[Artwork delivery capture] --> C[Coverforge]
-  B[Audio delivery evidence] --> M[Mastergate]
   D[Metadata review] --> L[Releaseledger]
   C --> R[Releaseforge local proof and handoff]
-  M --> R
   L --> R
 ```
 ````
@@ -172,7 +169,7 @@ Follow it with one sentence stating that the arrows show a possible local
 evidence flow, not automatic integration, a mandated stack, or external
 approval.
 
-- [ ] **Step 3: Replace the bullet list with a four-row tool table**
+- [ ] **Step 3: Replace the bullet list with a three-row tool table**
 
 Use the columns `Workflow lane`, `Tool`, `Local role`, and `State`. Rows must
 accurately say:
@@ -180,7 +177,6 @@ accurately say:
 | Workflow lane | Tool | Local role | State |
 | --- | --- | --- | --- |
 | Visual delivery | Coverforge | Preflights artwork and can create a portable delivery capture. | Supporting local tool. |
-| Audio delivery | Mastergate | Measures a declared PCM WAV batch against a chosen delivery contract. | Supporting local tool. |
 | Metadata review | Releaseledger | Checks declared release metadata and prepares a reviewable handoff dossier. | Supporting local tool. |
 | Evidence synthesis | Releaseforge | Creates a local proof packet and can reconcile documented compatible captures. | Draft PR; synthetic demo available. |
 
@@ -240,7 +236,6 @@ Run:
 git diff --check origin/codex/profile-portfolio...HEAD
 rg -n 'https://github.com/notgabriels-sys/' README.md START_HERE.md
 gh repo view notgabriels-sys/albumdesign --json nameWithOwner,url
-gh repo view notgabriels-sys/mastergate --json nameWithOwner,url
 gh repo view notgabriels-sys/releaseledger --json nameWithOwner,url
 gh repo view notgabriels-sys/sleeveproof --json nameWithOwner,url
 gh pr view --repo notgabriels-sys/releaseforge 1 --json url,state,isDraft,headRefName

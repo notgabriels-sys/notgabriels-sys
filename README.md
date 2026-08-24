@@ -14,15 +14,13 @@ local demo rather than a claim of a finished service.
 
 → **[Open the safe start-here guide](START_HERE.md)**
 
-## One workflow, four local evidence lanes
+## One workflow, three local evidence lanes
 
 ```mermaid
 flowchart LR
   A[Artwork delivery capture] --> C[Coverforge]
-  B[Audio delivery evidence] --> M[Mastergate]
   D[Metadata review] --> L[Releaseledger]
   C --> R[Releaseforge local proof and handoff]
-  M --> R
   L --> R
 ```
 
@@ -32,7 +30,6 @@ mandated stack, or external approval. Each tool can be used independently.
 | Workflow lane | Tool | Local role | State |
 | --- | --- | --- | --- |
 | Visual delivery | [Coverforge](https://github.com/notgabriels-sys/albumdesign) | Preflights artwork and exports a per-platform delivery pack. | Supporting local tool. |
-| Audio delivery | [Mastergate](https://github.com/notgabriels-sys/mastergate) | Measures a declared PCM WAV batch against a chosen delivery contract. | Supporting local tool. |
 | Metadata review | [Releaseledger](https://github.com/notgabriels-sys/releaseledger) | Checks declared release metadata and prepares a reviewable handoff dossier. | Supporting local tool. |
 | Evidence synthesis | [Releaseforge](https://github.com/notgabriels-sys/releaseforge/pull/1) | Creates a local proof packet and can reconcile documented compatible captures. | Draft PR; synthetic demo available. |
 

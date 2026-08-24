@@ -29,7 +29,6 @@ does not inspect, upload, rename, delete, or modify a real release folder.
 | Workflow lane | Tool | Local role |
 | --- | --- | --- |
 | Artwork delivery | [Coverforge](https://github.com/notgabriels-sys/albumdesign) | Preflights artwork and exports a per-platform delivery pack. |
-| Audio delivery | [Mastergate](https://github.com/notgabriels-sys/mastergate) | Measures a declared PCM WAV batch against a chosen delivery contract. |
 | Metadata review | [Releaseledger](https://github.com/notgabriels-sys/releaseledger) | Checks declared release metadata and prepares a reviewable handoff dossier. |
 | Evidence synthesis | [Releaseforge](https://github.com/notgabriels-sys/releaseforge/pull/1) | Creates a local proof packet and can reconcile documented compatible captures. |
 

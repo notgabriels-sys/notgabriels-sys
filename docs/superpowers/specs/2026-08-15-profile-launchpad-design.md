@@ -65,9 +65,9 @@ The profile README remains concise. It contains:
 2. Link directly to the draft PR and its current branch tree, then show the
    documented synthetic-demo commands. The commands use a new local destination
    and do not inspect real music or artwork.
-3. Explain the four-tool evidence map: Coverforge for visual delivery captures,
-   Mastergate for declared PCM WAV measurements, Releaseledger for declared
-   metadata, and Releaseforge for one local review packet. The guide does not
+3. Explain the three-tool evidence map: Coverforge for visual delivery captures,
+   Releaseledger for declared metadata, and Releaseforge for one local review
+   packet. The guide does not
    claim the tools are required, automatically interoperable beyond documented
    captures, or a replacement for human approval.
 4. Link to the existing Releaseforge privacy-minimal pilot protocol and repeat
