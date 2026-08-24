@@ -2,7 +2,7 @@
 
 Berlin-based sound engineer, music producer, live performer and toolmaker building techno sample packs, studio utilities, design systems, plugins and small local-first software.
 
-**[GABRIEL TOOLS + CODE →](https://gabriel-tools-and-code.notgabriels960914.chatgpt.site)**
+**[GABRIEL TOOLS + CODE →](https://tools.gabs-utilities.com)**
 
 ---
 
@@ -10,7 +10,7 @@ Berlin-based sound engineer, music producer, live performer and toolmaker buildi
 
 The catalog is the best starting point: it separates public products, source repositories, local candidates, private drafts and service concepts instead of pretending every build is already released.
 
-**[Browse audio products, repositories and studio tools →](https://gabriel-tools-and-code.notgabriels960914.chatgpt.site)**
+**[Browse audio products, repositories and studio tools →](https://tools.gabs-utilities.com)**
 
 ### Free and open source
 
@@ -37,7 +37,7 @@ The catalog is the best starting point: it separates public products, source rep
 
 **[The shop →](https://notgabriel.gumroad.com/)** — techno sample packs, template packs, theme sets, wallpapers and reference cards. One-time purchases, no subscriptions.
 
-**[Mixing and mastering preview →](https://gabriel-mixing-and-mastering-d1dmyt.v2.appdeploy.ai/)** — enquiries open for electronic music; no online booking or checkout.
+**[Mixing and mastering services →](https://audio.gabs-utilities.com/)** — mixing, mastering, stem mastering and mix feedback for electronic music.
 
 ---
 
