@@ -2,7 +2,7 @@
 
 Berlin-based sound engineer, music producer, live performer and toolmaker building techno sample packs, studio utilities, design systems, plugins and small local-first software.
 
-**[GABRIEL TOOLS + CODE →](https://tools.gabs-utilities.com)**
+**[GABRIEL TOOLS + CODE →]([https://tools.gabs-utilities.com](https://tools.gabs-utilities.com))**
 
 ---
 
