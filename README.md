@@ -47,3 +47,21 @@ local-first and make their limits explicit.
 
 I am consolidating this work around release handoff and delivery evidence rather
 than turning every useful internal utility into a separate product.
+
+## Client Workflow Check (draft integration)
+
+The hub also contains a small local check for the point before work begins: it
+records the declared status returned by **Mixintake** and **Scopequote** in one
+path-free review packet. It does not turn an intake into a price, a quote into
+an agreement, or a local check into evidence of a real-world client outcome.
+
+```sh
+python3 scripts/client_workflow_check.py INTAKE.toml QUOTE.toml \
+  --output NEW_CLIENT_WORKFLOW_REVIEW
+```
+
+See [the Client Workflow Check guide](docs/CLIENT_WORKFLOW_CHECK.md) for the
+required local executables, exit statuses, and boundaries. Its companion
+client-review changes currently remain in draft PRs:
+[Mixintake PR #2](https://github.com/notgabriels-sys/mixintake/pull/2) and
+[Scopequote PR #2](https://github.com/notgabriels-sys/scopequote/pull/2).
