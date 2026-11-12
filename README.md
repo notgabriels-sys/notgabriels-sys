@@ -2,7 +2,7 @@
 
 Berlin-based sound engineer, music producer, live performer and toolmaker building techno sample packs, studio utilities, design systems, plugins and small local-first software.
 
-**[GABRIEL TOOLS + CODE →]([https://tools.gabs-utilities.com](https://tools.gabs-utilities.com))**
+**[GABRIEL TOOLS + CODE →](https://tools.gabs-utilities.com)**
 
 ---
 
@@ -12,11 +12,17 @@ The catalog is the best starting point: it separates public products, source rep
 
 **[Browse audio products, repositories and studio tools →](https://tools.gabs-utilities.com)**
 
+### Familiars: Claude tools for sound work
+
+**[Meet the Familiars →](https://gabs-utilities.com/familiars.html)**
+
+Graphite is available now as a free MIT-licensed Claude Code theme, with a preview, installation steps and measured contrast figures. Six further entries cover track finishing, release concepts, audio evaluation, session reports, studio German and studio operations; these remain **Early access** enquiries in the catalogue.
+
 ### Free and open source
 
 | | |
 |---|---|
-| **[50 Dark Themes for Claude Code](https://github.com/notgabriels-sys/claude-code-50-dark-themes)** | Fifty hand-tuned dark themes with a visual gallery and a one-command installer. MIT. |
+| **[50 Dark Themes for Claude Code](https://github.com/notgabriels-sys/claude-code-50-dark-themes)** | 62 free MIT-licensed dark themes across two native Claude Code plugins (50 + 12), with a visual gallery and matching terminal schemes. |
 | **[Releaseforge](https://github.com/notgabriels-sys/releaseforge)** | Local release-proof packets before distributor upload. Keeps measured facts, declarations and blockers separate. MIT. |
 | **[Releaseledger](https://github.com/notgabriels-sys/releaseledger)** | Offline release metadata checker and handoff dossier generator. MIT. |
 | **[Coverforge](https://github.com/notgabriels-sys/albumdesign)** | Release-artwork preflight, delivery exports and review tooling. MIT. |
@@ -25,7 +31,7 @@ The catalog is the best starting point: it separates public products, source rep
 
 ### See things running
 
-**[Theme gallery →](https://notgabriels-sys.github.io/claude-code-50-dark-themes/)** — all fifty Claude Code themes previewed in their own colours.
+**[Theme gallery →](https://gabs-utilities.com/theme/)** — all 62 Claude Code themes previewed in their own colours.
 
 **[Website templates →](https://notgabriels-sys.github.io/dark-html-templates-demo/)** — portfolio, SaaS landing, docs, pricing, changelog and waitlist templates.
 
